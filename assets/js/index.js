@@ -127,8 +127,6 @@ function scrollParallax(){
     headerParallax.style.transform = `translateY(${scrollTop * 0.6}px)`;
 
     // ANIMATION IMAGE BODY 
-    // console.log(parallaxBgBody, viewportSize);
-    // console.log(parallaxBgBody * -0.1);
     if (parallaxBgBody<viewportSize) {
         bodySectionParallax.style.transform = `translateX(${parallaxBgBody * 0.2}px)`;
     }
@@ -271,10 +269,3 @@ window.addEventListener('scroll', scrollParallax);
 
 
 
-// TOGGLE MENU
-const navToggle = document.querySelector('.btn-menu')
-const navMenu = document.querySelector('.nav-menu')
-
-navToggle.addEventListener('click', () => {
-    navMenu.classList.toggle("nav-menu_visible");
-})

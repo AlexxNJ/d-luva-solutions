@@ -684,4 +684,46 @@
             opacity: 0;
         }
     }
+
+}
+
+@media screen and (max-width:979px) {
+    .header-texts>.header-title{
+        animation-name: showCardUpFullRes;
+        animation-duration: 2s;
+    }
+    .header-texts>.header-subtitle{
+        animation-name: showCardUpFullRes;
+        animation-duration: 2.5s;
+    }
+    /* ANIMATIONS */
+    @keyframes showTextLeftFullRes {
+        from{
+            transform: translateY(50px);
+            opacity: 0;
+        }
+    }
+
+    @keyframes showContentCardLeftFullRes {
+        from{
+            transform: translateY(50px);
+            opacity: 0;
+        }
+        
+    }
+
+    @keyframes showBorderCardFullRes {
+        from{
+            transform: translateY(50px);
+            opacity: 0;
+        }
+        
+    }
+
+    @keyframes showCardUpFullRes {
+        from{
+            transform: translateY(50px);
+            opacity: 0;
+        }
+    }
 }

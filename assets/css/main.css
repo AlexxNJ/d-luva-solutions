@@ -208,6 +208,7 @@ p{
     .btn-menu{
         display: block;
         cursor: pointer;
+        z-index: 100000;
     }
     .btn-menu:focus:not(:focus-visible){
         outline: none;
@@ -218,13 +219,13 @@ p{
         background: var(--primary-color);
         position: fixed;
         left: 0;
-        top: 100px;
+        top: 0;
         width: 100%;
-        padding: 20px 0;
+        padding: 100px 0 20px 0;
         height: 100vh;
-        overflow-y: auto;
+        overflow-y: hidden;
         justify-content: flex-start;
-        z-index: 1000;
+        z-index: 10000;
         left: 100%;
         transition: left 0.3s;
     }
