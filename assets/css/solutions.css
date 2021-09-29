@@ -323,100 +323,29 @@
 
 /* ANIMATIONS */
 @media screen and (min-width:631px) {
-    .first-box-icon{
-        animation: showBoxIcons 1s;
+    .container-icon{
+        animation: fadeInUp;
+        animation-duration: 1s;
     }
 
-    .first-icon-box{
-        animation: showIconBox 1.3s;
+    .icon-box, .title-solution, .text-solution{
+        animation: fadeInLeft;
+        animation-duration: 1.3s;
     }
 
-    .first-border-icon-box{
-        animation: showBorderIconBox 2.5s;
-    }
-    .first-text-icon-box{
-        animation: showTextIconBox 2s;
-    }
-
-    @keyframes showBoxIcons {
-        from{
-            transform: translateY(50px);
-            opacity: 0;
-        }
-    }
-
-    @keyframes showIconBox {
-        from{
-            transform: translateX(-50px);
-            opacity: 0;
-        }
-    }
-
-    @keyframes showBorderIconBox {
-        from{
-            width: 0;
-        }
-    }
-
-    @keyframes showTextIconBox {
-        from{
-            transform: translateX(-200px);
-            opacity: 0;
-        }
+    .border-container-icon{
+        animation: slideInLeft;
+        animation-duration: 3s;
     }
 }
 
 @media screen and (max-width:631px) {
-    .header-texts>.header-title{
-        animation: showTextIconBox 2s;
+    .header-title, .title-solution, .text-solution, .title-footer-solution, .text-footer-solution{
+        animation: fadeInUp;
+        animation-duration: 1.2s;
     }
-    .first-box-icon{
-        animation: showBoxIcons 1s;
-    }
-
-    .first-icon-box{
-        animation: showIconBox 1.3s;
-    }
-
-    .first-border-icon-box{
-        animation: showBorderIconBox 2.5s;
-    }
-    .first-text-icon-box{
-        animation: showTextIconBox 2s;
-    }
-
-    @keyframes showBoxIcons {
-        from{
-            transform: translateY(50px);
-            opacity: 0;
-        }
-    }
-
-    @keyframes showIconBox {
-        from{
-            transform: translateY(50px);
-            opacity: 0;
-        }
-    }
-
-    @keyframes showBorderIconBox {
-        from{
-            transform: translateY(50px);
-            opacity: 0;
-        }
-    }
-
-    @keyframes showTextIconBox {
-        from{
-            transform: translateY(50px);
-            opacity: 0;
-        }
-    }
-
-    @keyframes showTextFooter {
-        from{
-            transform: translateY(50px);
-            opacity: 0;
-        }
+    .container-icon{
+        animation: fadeIn;
+        animation-duration: 1.2s;
     }
 }

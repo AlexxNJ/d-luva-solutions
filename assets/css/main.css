@@ -89,16 +89,22 @@ p{
 .nav-menu-item{
     list-style: none;
 }
-
+/* 
 .nav-menu-item:not(:last-child){
     margin-right: 20px;
-}
+} */
 
 .nav-menu-item .nav-menu-link{
     text-decoration: none;
     color: #fff;
     font-size: 1.2rem;
     font-family: sans-serif;
+    padding: 15px 20px;
+}
+
+.nav-menu-link:hover{
+    transition: ease-in-out .4s;
+    color: var(--second-color);
 }
 
 .nav-menu-item .nav-menu-link.menu-link__active{
@@ -254,6 +260,8 @@ p{
         justify-content: center;
         align-items: center;
         margin-bottom: 40px;
+        animation: fadeInUp;
+        animation-duration: 1.5s;
     }
     .footer-logo{
         margin-bottom: 20px;
@@ -264,13 +272,21 @@ p{
         justify-content: center;
         align-items: center;
         margin-bottom: 40px;
+        animation: fadeInUp;
+        animation-duration: 1.5s;
     }
     .contact{
         text-align: center;
+        animation: fadeInUp;
+        animation-duration: 1.5s;
     }
     .form-contact{
         align-items: stretch;
         margin-bottom: 40px;
+    }
+    .follow-us{
+        animation: fadeInUp;
+        animation-duration: 1.5s;
     }
     .icons_follow_us{
         display: flex;

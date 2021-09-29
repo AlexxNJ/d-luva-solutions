@@ -88,6 +88,8 @@
 
     .profile{
         width: 100%;
+        animation: fadeInUp;
+        animation-duration: 1.2s;
     }
 
     .header-texts>.header-title{
@@ -96,11 +98,15 @@
         line-height: 3.5rem;
         margin-bottom: 20px;
         text-align: center;
+        animation: fadeInUp;
+        animation-duration: 1.2s;
     }
     
     .header-texts>.header-text{
         width: 100%;
         font-size: 1.7rem;
         text-align: center;
+        animation: fadeInUp;
+        animation-duration: 1.3s;
     }
 }

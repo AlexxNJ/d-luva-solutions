@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
     <link rel="stylesheet" href="../assets/css/about.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <title>D LUVA SOLUTIONS</title>
 </head>
 <body>
@@ -26,8 +27,8 @@
             </ul>
         </nav>
         <div class="header-texts container">
-            <h1 class="header-title">Nuestra mision</h1>
-            <p class="header-text">Transformar los procesos de staffing optimizandolos logrando igualdad e inclusion por medio de la tecnologia mejorando la experiencia de los candidatos, creando valor dentro de las organizaciones.</p>
+            <h1 class="header-title wow">Nuestra mision</h1>
+            <p class="header-text wow">Transformar los procesos de staffing optimizandolos logrando igualdad e inclusion por medio de la tecnologia mejorando la experiencia de los candidatos, creando valor dentro de las organizaciones.</p>
         </div>
     </header>
 
@@ -65,7 +66,7 @@
     </main>
 
     <footer class="footer container">
-        <div class="company-info">
+        <div class="company-info wow">
             <a href="../index.html" class="footer-logo">
                 <img src="../assets/images/logo.jpeg" alt="logo" class="footer-logo-img">
             </a>
@@ -74,13 +75,13 @@
             <p class="info">500 Terry Francois St</p>
             <p class="info">San Francisco, CA 94158</p>
         </div>
-        <ul class="footer-nav-menu">
-            <li class="footer-nav-menu-item"><a class="footer-nav-menu-link" href="../index.html">Inicio</a></li>
-            <li class="footer-nav-menu-item"><a class="footer-nav-menu-link" href="solutions.html">Soluciones</a></li>
-            <li class="footer-nav-menu-item"><a class="footer-nav-menu-link" href="about.html">Visión</a></li>
-            <li class="footer-nav-menu-item"><a class="footer-nav-menu-link" href="profiles.html">D Luva Profiles</a></li>
+        <ul class="footer-nav-menu wow">
+            <li class="footer-nav-menu-item"><a class="footer-nav-menu-link" href="index.html">Inicio</a></li>
+            <li class="footer-nav-menu-item"><a class="footer-nav-menu-link" href="./pages/solutions.html">Soluciones</a></li>
+            <li class="footer-nav-menu-item"><a class="footer-nav-menu-link" href="./pages/about.html">Visión</a></li>
+            <li class="footer-nav-menu-item"><a class="footer-nav-menu-link" href="./pages/profiles.html">D Luva Profiles</a></li>
         </ul>
-        <div class="contact">
+        <div class="contact wow">
             <h3 class="footer-title-contact">Contacto</h3>
             <form class="form-contact">
                 <label for="input-contact">Email *</label>
@@ -88,7 +89,7 @@
                 <button class="btn-submit">Enviar</button>
             </form>
         </div>
-        <div class="follow-us">
+        <div class="follow-us wow">
             <h3 class="title-follow-us">Siguenos en:</h3>
             <div class="icons_follow_us">
                 <a href="#"><i class="fab fa-linkedin icon_follow_us"></i></a>
@@ -98,7 +99,11 @@
         </div>
     </footer>
 
-    <script src="../assets/js/about.js"></script>
     <script src="../assets/js/main.js"></script>
+    <script src="../assets/js/about.js"></script>
+    <script src="../assets/js/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
 </body>
 </html>

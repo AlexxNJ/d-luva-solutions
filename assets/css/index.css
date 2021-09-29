@@ -62,6 +62,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    overflow: hidden;
 }
 
 .title-first-section, .paragraph-first-section{
@@ -177,6 +178,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    overflow: hidden;
 }
 
 .left-c-s-section{
@@ -229,8 +231,7 @@
     text-align: center;
     color: var(--text-color);
     position: relative;
-    /* padding-bottom: 20px; */
-    /* border-bottom: 4px solid var(--bg-color); */
+    overflow: hidden;
 }
 
 .border-how{
@@ -289,6 +290,7 @@
     justify-content: center;
     align-items: center;
     border: 1px solid var(--bg-color);
+    overflow: hidden;
 }
 
 .client>.title-our-partners{
@@ -317,6 +319,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    overflow: hidden;
 }
 
 .left-footer-fs{
@@ -648,82 +651,46 @@
 /* ANIMATIONS */
 @media screen and (min-width:979px) {
     .header-texts>.header-title{
-        animation-name: showTextLeftFullRes;
+        animation: fadeInLeft;
         animation-duration: 2s;
     }
     .header-texts>.header-subtitle{
-        animation-name: showTextLeftFullRes;
-        animation-duration: 2.5s;
+        animation: fadeInLeft;
+        animation-duration: 2.1s;
     }
-    /* ANIMATIONS */
-    @keyframes showTextLeftFullRes {
-        from{
-            transform: translateX(-70px);
-            opacity: 0;
-        }
+    .card, .title-second-section, .title-footer-fs{
+        animation: fadeInUp;
+        animation-duration: 1.2s;
     }
-
-    @keyframes showContentCardLeftFullRes {
-        0%{
-            opacity: 0;
-            transform: translateX(-70px);
-        }
-        
+    .card-header-icon{
+        animation: fadeInLeft;
+        animation-duration: 1.7s;
     }
-
-    @keyframes showBorderCardFullRes {
-        0%{
-            width: 0px;
-        }
-        
+    .title-card, .paragraph-card, .title-first-section, .paragraph-first-section,
+    .p-second-section, .title-how, .text-how, .p-footer-fs{
+        animation: fadeInLeft;
+        animation-duration: 1.3s;
+    }
+    .card-footer, .border-how{
+        animation: slideInLeft;
+        animation-duration: 2s;
     }
 
-    @keyframes showCardUpFullRes {
-        from{
-            transform: translateY(50px);
-            opacity: 0;
-        }
+    .title-our-partners, .img-logo-client{
+        animation: fadeInLeft;
+        animation-duration: 1.7s;
     }
-
 }
 
 @media screen and (max-width:979px) {
     .header-texts>.header-title{
-        animation-name: showCardUpFullRes;
-        animation-duration: 2s;
+        animation: fadeInUp;
+        animation-duration: 1.4s;
     }
-    .header-texts>.header-subtitle{
-        animation-name: showCardUpFullRes;
-        animation-duration: 2.5s;
-    }
-    /* ANIMATIONS */
-    @keyframes showTextLeftFullRes {
-        from{
-            transform: translateY(50px);
-            opacity: 0;
-        }
-    }
-
-    @keyframes showContentCardLeftFullRes {
-        from{
-            transform: translateY(50px);
-            opacity: 0;
-        }
-        
-    }
-
-    @keyframes showBorderCardFullRes {
-        from{
-            transform: translateY(50px);
-            opacity: 0;
-        }
-        
-    }
-
-    @keyframes showCardUpFullRes {
-        from{
-            transform: translateY(50px);
-            opacity: 0;
-        }
+    .header-texts>.header-subtitle, .title-first-section, .paragraph-first-section,
+    .card, .title-second-section, .p-second-section, .info-how, .img-logo-client,
+    .title-footer-fs, .p-footer-fs{
+        animation: fadeInUp;
+        animation-duration: 1.5s;
     }
 }
